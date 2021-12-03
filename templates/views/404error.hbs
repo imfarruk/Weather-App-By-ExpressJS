@@ -1,0 +1,35 @@
+<html lang="en">
+  <head>
+   {{>headerlinks}}
+  </head>
+
+  <body>
+    {{>navbar}}
+
+    <!-- Main Header -->
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 col-12 main_header_right align-items-center">
+  
+            <!-- left side div -->
+            {{!-- <div class="col-md-12 col-12 main_header_right align-items-center"> --}}
+              <figure>
+                <img src="images/404error.png" class="imganim"  alt="farru" />
+              </figure>
+              <p class="weatherp">Welcome to <i class="fas fa-sun-cloud"></i>Weather App</p>
+              <h1>{{errormsg}}</h1>
+            <a href="/"><button class="goback" >Go Back</button></a>
+            {{!-- </div>        --}}
+           </div>
+
+      </div>
+
+    </div>
+
+    <!-- footer  -->
+    {{>footer}}
+
+    <script src="scripts.js"></script>
+  </body>
+</html>

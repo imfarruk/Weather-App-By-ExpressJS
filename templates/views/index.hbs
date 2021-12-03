@@ -1,0 +1,53 @@
+<html lang="en">
+  <head>
+    {{>headerlinks}}
+  </head>
+
+  <body>
+    
+   {{>navbar}}
+    <!-------- Main Header----- -->
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-10 col-12 mx-auto">
+          <div class="row">
+            <!-- left side div -->
+            <div class="col-md-6 col-12 main_header_left">
+              <p>Welcome to <span class="text_color">Weather </span> App</p>
+              <h1>Get The Latest App Info</h1>
+              <a href="/weather"><button>Check Now</button></a>
+            </div>
+
+            <!-- right side div -->
+            <div class="col-md-6 col-12 main_header_right align-items-center">
+              <div
+                id="carouselExampleControls"
+                class="carousel slide"
+                data-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/index3.png" class="w-100" alt="first" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/index2.png" class="w-100" alt="second" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/index4.png" class="w-100" alt="third" />
+                  </div>
+                </div>
+      
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer  -->
+   {{>footer}}
+
+    <script src="scripts.js"></script>
+  </body>
+</html>

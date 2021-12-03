@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,700;1,400;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "PT Serif", serif;
+}
+
+:root {
+  --main-bg: rgb(11, 5, 46);
+  --main-color: rgb(36, 134, 36);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.row {
+  margin: 0;
+}
+.main_menu {
+  background-color: var(--main-bg);
+}
+.navbar {
+  color: rgb(153, 51, 51);
+  background-color: var(--main-bg);
+  padding: 20px;
+}
+
+.navbar li {
+  margin-left: 20px;
+}
+
+.navbar a {
+  color: white;
+  font-size: 1.8rem;
+}
+
+.navbar a:hover {
+  color: var(--main-color);
+}
+.navbar-toggler {
+  background-color: white;
+}
+
+.fa-sun-cloud {
+  width: 30px;
+  transition: all linear;
+  animation: skew 5s linear infinite;
+  color: var(--main-color);
+}
+
+@keyframes skew {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: rotate(20deg);
+    transform: scale(1.3);
+  }
+  100% {
+    transform: rotate(-20deg);
+  }
+}
+
+/* main header */
+
+.main_header_left {
+  height: 50rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.main_header_left p {
+  font-size: 2rem;
+}
+
+.main_header_left h1 {
+  font-size: 4rem;
+  margin: 1rem 0 4 rem 0;
+  text-transform: capitalize;
+}
+
+.main_header_left .text_color {
+  color: var(--main-color);
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.main_header_left .text_color1 {
+  color: brown;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.main_header_left button {
+  border: none;
+  padding: 0.8rem 1.8rem;
+  font-size: 1.4rem;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  box-shadow: 0 8px 6px -6px;
+  outline: none;
+}
+
+.main_header_left button:hover {
+  box-shadow: 0 8px 6px -6px var(--main-color);
+}
+.main_header_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.main_header_right figure img {
+  height: 400px;
+  filter: drop-shadow(0 20px 5px rgb(146, 31, 31));
+}
+
+.imganim {
+  animation: imganim 5s linear infinite;
+}
+
+@keyframes imganim {
+  0% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+/* footer code */
+
+footer {
+  width: 100%;
+  background-color: var(--main-bg);
+  margin-top: auto;
+}
+footer p {
+  margin: 0;
+  text-align: center;
+  color: white;
+  line-height: 5rem;
+  font-size: 1.4rem;
+}
+
+.weatherp {
+  color: blue;
+  font-size: 20px;
+}
+
+.goback {
+  border: none;
+  padding: 0.8rem 1.8rem;
+  background-color: aqua;
+  font-size: 1.4rem;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  box-shadow: 0 8px 6px -6px;
+  outline: none;
+}
+
+/* Weather page */
+.main_header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main_content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.main_content .temp_form input {
+  border-radius: 40px;
+  font-size: 14px;
+}
+input[type="submit"] {
+  margin-left: -85px;
+  height: 33px;
+  width: 80px;
+  background-color: aqua;
+  outline: none;
+  border: none;
+}
+.main_content .temp_form .searchinput {
+  background-color: rgb(2, 2, 32);
+  height: 40px;
+  min-width: 480px;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  outline: none;
+  border: none;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  padding-left: 15px;
+  border-radius: 30px;
+}
+
+.tempInfo {
+  height: 300px;
+  width: 350px;
+  color: white;
+  padding: 10px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(2, 2, 32);
+  border-bottom: 2px solid red;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.top_layer {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  font-size: 15px;
+  background-color: white;
+  box-shadow: 0 2px 6px rgb(223, 81, 16);
+  color: rgb(2, 2, 32);
+}
+
+.main_layer {
+  padding: 15px;
+  display: flex;
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+}
+
+.middle_layer {
+  display: flex;
+  font-size: 70px;
+  justify-content: space-around;
+  color: rgb(209, 201, 201);
+}
+
+.main_layer .middle_layer p,
+.main_layer .middle_layer .fa {
+  font-size: 7rem;
+  font-weight: 900;
+}
+
+.fas {
+  color: rgb(224, 20, 180);
+}
+
+.data_hide {
+  visibility: hidden;
+  transition: all 0.3s linear;
+}
+
+/* responsive code */
+
+@media (max-width: 768px) {
+  .main_header_left {
+    height: auto;
+    margin: 5rem 0;
+  }
+  .main_header_right {
+    height: auto;
+    margin: 5rem 0;
+  }
+
+  .main_header_right img {
+    height: 300px;
+  }
+}
